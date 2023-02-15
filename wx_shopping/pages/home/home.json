@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search": "../../components/search/search",
+    "mp-sticky": "@miniprogram-component-plus/sticky"
+  },
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true
+}

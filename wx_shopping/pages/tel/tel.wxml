@@ -1,0 +1,11 @@
+<mp-form-page title="hello world" subtitle="您的手机号将会与微信绑定">
+  <mp-cells title="信息">
+    <mp-cell prop="mobile" title="手机号" ext-class="weui-cell_vcode">
+      <input type="text" placeholder="请输入手机号" bindinput="handleInputChange" data-field="mobile" />
+      <view slot="footer" class="weui-vcode-btn">获取验证码</view>
+    </mp-cell>
+  </mp-cells>
+  <view slot="button">
+    <button type="primary" bindtap="handleSubmit" class="weui-btn">确定</button>
+  </view>
+</mp-form-page>
