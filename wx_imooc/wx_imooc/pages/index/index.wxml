@@ -1,0 +1,15 @@
+<view class="header">
+  <input type="text" class="header-input" placeholder="请输入关键字" placeholder-class="header-input-placeholder" bindinput="handleInputChange" />
+  <icon type="search" class="header-input-icon" size="23" wx:if="{{showIcon}}" />
+</view>
+
+<view class="navigator">
+  <view wx:for="{{tabs}}" wx:key="index" class="navigator-item" data-type="{{item.type}}" bindtap="handleType">
+    <image src="../../images/{{item.type}}.png" class="navigator-item-img" />
+    {{item.name}}
+    <view hidden="{{currentType!==item.type}}" class="navigator-line navigator-line-{{item.type}}" />
+  </view>
+</view>
+
+<include src="./recommend/recommend.wxml" />
+<include src="./activity/activity.wxml" />

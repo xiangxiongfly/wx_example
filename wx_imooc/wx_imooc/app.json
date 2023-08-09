@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/person/person",
+    "pages/hot/hot",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我的imooc",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#B7BBBF",
+    "selectedColor": "#2B333B",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "images/cart.png",
+        "selectedIconPath": "images/cart-active.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "images/person.png",
+        "selectedIconPath": "images/person-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
