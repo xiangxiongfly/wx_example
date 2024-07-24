@@ -1,0 +1,26 @@
+.sortList {
+  display: flex;
+}
+
+.sortList view {
+  flex: 1;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.goodsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goodsContainer .goods {
+  width: 50%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.goodsContainer .goods image {
+  width: 100%;
+}

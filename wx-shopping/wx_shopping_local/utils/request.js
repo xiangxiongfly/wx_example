@@ -6,7 +6,7 @@ function request(params, isHeader = false) {
     })
     wx.request({
       ...params,
-      url: 'http://localhost:3000' + params.url,
+      url: 'http://localhost:5001' + params.url,
       success: (res) => {
         if (isHeader) {
           resolve({

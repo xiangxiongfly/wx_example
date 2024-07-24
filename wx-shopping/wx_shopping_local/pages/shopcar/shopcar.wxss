@@ -1,0 +1,36 @@
+.calc text {
+  width: 60rpx;
+  display: inline-block;
+  background-color: gainsboro;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+}
+
+.content image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer .left {
+  flex: 1;
+  display: flex;
+  line-height: 80rpx;
+}
+
+.footer .right {
+  margin-right: 10px;
+}

@@ -1,0 +1,31 @@
+<view class="tabs">
+  <view wx:for="{{rankTypes}}" wx:key="index" class="tab {{rankType === item.type ? 'tab_active':''}}" data-type="{{item.type}}" bindtap="handleTab">
+    {{item.title}}
+    <view wx:if="{{rankType === item.type}}" class="tab-line"></view>
+  </view>
+</view>
+
+<view class="time-tabs">
+  <view wx:for="{{timeTypes}}" wx:key="index" class="time-tab {{timeType === item.value ? 'time_tab_active':''}}" data-value="{{item.value}}" bindtap="handleTimeTab">
+    {{item.title}}
+  </view>
+</view>
+
+<view class="list">
+  <view class="item" wx:for="{{currentList}}" wx:key="title">
+    <image class="item-image" src="{{item.imgUrl}}" />
+    <view class="item-title">
+      <view class="item-title-inner">
+        {{item.title}}
+      </view>
+    </view>
+    <view class="item-number">
+      <image class="item-number-img" src="../../images/first.png" wx:if="{{index === 0}}" />
+      <image class="item-number-img" src="../../images/second.png" wx:elif="{{index === 1}}" />
+      <image class="item-number-img" src="../../images/third.png" wx:elif="{{index === 2}}" />
+      <view wx:else class="item-number-common">
+        {{index + 1}}
+      </view>
+    </view>
+  </view>
+</view>
