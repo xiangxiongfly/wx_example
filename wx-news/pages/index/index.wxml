@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view scroll-x="true" type="list" class="tab-bar">
+    <view wx:for="{{tabs}}" wx:key="index" class="tab-item" data-index="{{index}}" bindtap="handleTabTap">
+      {{item}}
+    </view>
+  </view>
+
+  <scroll-view scrol-y="true" type="list" style="height: 100vh;"  class="news-list" bindscrolltolower="loadMoreNews">
+    <view wx:for="{{newsList}}" wx:key="index" class="news-item">
+      <image src="{{item.imageUrl}}" class="news-image" />
+      <view class="news-content">
+        <text class="news-title">{{item.title}}</text>
+        <text class="news-description">{{item.description}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

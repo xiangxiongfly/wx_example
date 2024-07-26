@@ -8,7 +8,7 @@
       </view>
       <view class="content">
         <checkbox checked="{{item.checked}}" bindtap="handleCheckbox" data-item="{{item}}" />
-        <image src="http://localhost:5001{{item.goods.poster}}" mode="aspectFit" />
+        <image src="http://localhost:3000{{item.goods.poster}}" mode="aspectFit" />
         <view style="font-size:13px;">
           <view>
             {{item.goods.title}}

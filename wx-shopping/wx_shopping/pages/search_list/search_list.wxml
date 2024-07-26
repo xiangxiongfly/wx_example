@@ -11,7 +11,7 @@
 
 <view class="goodsContainer">
   <view wx:for="{{goodsList}}" wx:key="index" class="goods" data-id="{{item.id}}" data-title="{{item.title}}" bindtap="handleTap">
-    <image src="http://localhost:5001{{item.poster}}" mode="widthFix" />
+    <image src="http://localhost:3000{{item.poster}}" mode="widthFix" />
     <view>
       {{item.title}}
     </view>

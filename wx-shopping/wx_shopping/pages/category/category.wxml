@@ -3,7 +3,7 @@
     <mp-vtabs-content tabIndex="{{index}}">
       <view class=" vtabs-content-item">
         <view wx:for="{{item.goods}}" wx:key="index" data-id="{{item.id}}" data-title="{{item.title}}" bindtap="handleTap" class="item">
-          <image src="http://localhost:5001{{item.poster}}" mode="widthFix" />
+          <image src="http://localhost:3000{{item.poster}}" mode="widthFix" />
           <view>
             {{item.title}}
           </view>

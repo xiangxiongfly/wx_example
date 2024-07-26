@@ -76,7 +76,7 @@ Page({
   handleTap(e) {
     wx.previewImage({
       current: e.currentTarget.dataset.current,
-      urls: this.data.detailInfo.slides.map(item => `http://localhost:5001${item}`),
+      urls: this.data.detailInfo.slides.map(item => `http://localhost:3000${item}`),
     })
   },
   handleActive(e) {

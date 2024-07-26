@@ -1,6 +1,6 @@
 <swiper indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}" style="height:297rpx">
   <swiper-item wx:for="{{slideList}}" wx:key="index">
-    <image src="http://localhost:5001{{item.url}}" mode="widthFix" style="width: 100%;" />
+    <image src="http://localhost:3000{{item.url}}" mode="widthFix" style="width: 100%;" />
   </swiper-item>
 </swiper>
 
@@ -11,7 +11,7 @@
 </mp-sticky>
 
 <view wx:for="{{goodsList}}" wx:key="index" bindtap="toDetail" data-id="{{item.id}}" data-title="{{item.title}}" style="padding:20rpx; overflow: hidden;">
-  <image src="http://localhost:5001{{item.poster}}" mode="widthFix" style="width: 200rpx; float:left;" />
+  <image src="http://localhost:3000{{item.poster}}" mode="widthFix" style="width: 200rpx; float:left;" />
   <view>
     <view>{{item.title}}</view>
     <view style="color:red">价格：￥{{item.price}}</view>
