@@ -1,0 +1,28 @@
+<!--pages/guest/guest.wxml-->
+<image src="/images/bj_2.png" class="bg" />
+<form>
+  <view class="content">
+    <view class="input">
+      <input name="name" placeholder="请输入您的姓名" placeholder-class="phcolor" />
+    </view>
+    <view class="input">
+      <input name="phone" placeholder="请输入您的手机号码" placeholder-class="phcolor" />
+    </view>
+    <view class="radio">
+      <text>请选择您的性别：</text>
+      <radio-group>
+        <radio>男</radio>
+        <radio>女</radio>
+      </radio-group>
+    </view>
+    <view class="check">
+      <text>请选择您需要的点心：</text>
+      <checkbox-group>
+        <checkbox>蛋糕</checkbox>
+        <checkbox>巧克力</checkbox>
+        <checkbox>甜甜圈</checkbox>
+      </checkbox-group>
+    </view>
+    <button>提交</button>
+  </view>
+</form>

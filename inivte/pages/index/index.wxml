@@ -1,0 +1,28 @@
+<image src="/images/bg_1.png" class="bg" />
+<view class="content">
+  <image src="/images/save_the_date.gif" class="content-gif" />
+  <view class="conent-title">邀请函</view>
+  <view class="content-avatar">
+    <image src="/images/avatar.png" />
+  </view>
+  <view class="content-info">
+    <view class="content-name">
+      <image src="/images/tel.png" />
+      <view>小明</view>
+      <view>新郎</view>
+    </view>
+    <view class="content-wedding">
+      <image src="/images/wedding.png" />
+    </view>
+    <view class="content-name">
+      <image src="/images/tel.png" />
+      <view>小花</view>
+      <view>新娘</view>
+    </view>
+  </view>
+  <view class="content-address">
+    <view>诚邀参加</view>
+    <view>时间：{{time}}</view>
+    <view>地址：{{address}}</view>
+  </view>
+</view>
